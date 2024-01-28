@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Transitions, Translation</title>
+	<style>
+		.clearfloat {
+			clear: both;
+		}
+		body {
+			margin: 0px;
+			height: 500px;
+			background-image: url('sky.gif');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+
+		}
+
+		img{
+
+			width: 225px;
+			height: auto;
+		}
+
+		#container{
+			bottom: 100px;
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+
+		}
+		
+		h2 {text-align:center; background: lavenderblush; color: purple; 
+			width: 150px;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+		
+		img, .speechbubble, .speechcircleone, .speechcircletwo{
+			margin-right: 20px;
+			animation: dorimove 10s infinite;
+		}
+
+		
+		@keyframes dorimove {
+			0% {margin-right:50px;}
+			50% {margin-right: 300px}
+			100% {margin-right: 950px}
+		}
+		#createspeechbubble{
+			position: relative;
+		}
+
+		.speechbubble{
+			position: relative;
+			background: darkgoldenrod;
+			border-radius: .4em;
+			width: 150px;
+			padding: 25px;
+			bottom: 30px;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		.speechcircleone{
+			background: darkgoldenrod;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			border: 2px;
+			position: absolute;
+			top: 50px;
+			left: 30px;
+		}
+
+		.speechcircletwo{
+			background: darkgoldenrod;
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;
+			border: 1px;
+			position: absolute;
+			top: 70px;
+			left: 40px;
+		}
+
+	
+
+
+	</style>
+</head>
+<body>
+	<h2>Animation</h2>
+	<div id="container">
+	<div id="createspeechbubble">
+	<div class="speechbubble">Nobita!!!</div>
+	<div class="speechcircleone"></div>
+	<div class="speechcircletwo"></div>
+	<img src="doremon.gif" alt="Doreamon flying" id="doreamonflying">
+	</div>
+	</div>
+
+
+
+
+</body>
+</html>

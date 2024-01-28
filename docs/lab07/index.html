@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab 07 | Image Puzzle</title>
+<link href="styles.css" rel="stylesheet">
+
+<style>
+
+
+
+	#header {
+		background-image: url('back.png');
+		height: 200px;
+		background-position: center;
+		line-height: 200px;
+
+	}
+	
+	/* Gallery CSS */
+	
+	#gallery {
+		margin:0 auto;
+		text-align: center;	
+		width: 1000px;
+		height: auto;
+	}
+
+	.thumbnail {
+		background-color: lightgreen;
+		width: 315px; 
+		height: 250px;
+		border: 1px solid #000;
+		overflow: hidden;	
+	}
+	
+	.thumbnail-container{
+		float:left;
+		text-align: center;
+	}
+
+	.thumbnail-container p{
+		visibility: hidden;
+	}
+
+	.thumbnail-container:hover p {
+		visibility: visible;
+	}
+
+	/* landscape class adjust image to auto width, height 100% */
+	.landscape {
+		width:315px;
+		height:100%;
+	}
+
+	/* portrait class adjust image to width 100%, height auto */
+	.portrait {
+		width:100%;
+		height:auto;
+	}
+
+	
+	#gallery img{
+		width: 315px; 
+		height: 250px;
+		border: 1px solid #000;
+		overflow: hidden;	
+		float: left;
+	}
+
+	#shadow{
+		position: relative;
+		top: 10px;
+
+	}
+
+	#shadow img{
+		box-shadow: 5px 1px 1px 5px #9CB8E7;
+	}
+
+	#shadow1{
+		position: relative;
+		right: 10px;
+		bottom: 5px;
+	}
+
+	#shadow1 img{
+		box-shadow: 12px 12px 2px 1px #97DA6F;
+	}
+</style>
+
+</head>
+<body>
+
+<div id="header">
+<h1>Pikachu!</h1>
+</div><!-- #header -->
+
+
+
+<!-- Gallery Content -->
+
+<div id="gallery">
+
+
+					<img class="landscape" src="resized/row-1-column-1.jpg" alt="USC Village">
+					<img class="landscape" src="resized/row-1-column-2.jpg" alt="Mudd Hall">
+
+					<img class="landscape" src="resized/row-1-column-3.jpg" alt="Dining Hall">
+					<img class="landscape" src="resized/row-2-column-1.jpg" alt="Entrance">
+		<div id="shadow">
+					<img class="landscape" src="resized/row-2-column-2.jpg" alt="Entrance">
+		</div>
+					<img class="landscape" src="resized/row-2-column-3.jpg" alt="Entrance">
+					<img class="landscape" src="resized/row-3-column-1.jpg" alt="Entrance">
+				<div id="shadow1">
+					<img class="landscape" src="resized/row-3-column-2.jpg" alt="Entrance">
+				</div>
+					<img class="landscape" src="resized/row-3-column-3.jpg" alt="Entrance">
+
+	<div class="clearfloat"></div>
+</div> <!-- #gallery -->
+
+
+</body>
+</html>
