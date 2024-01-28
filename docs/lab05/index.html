@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab 05 | Form Page</title>
+
+<style>
+	body {
+		margin: 0px;
+		background-color:#fff;
+	}
+	h1 {
+		margin: 0px;
+	}
+		
+	h2 {
+		color: rgb(128,0,0);
+	}
+	
+	h3 {
+		font-size:1.2em;
+	}
+	
+	h4 {
+		color:darkgreen;
+	}
+
+	
+	#header {
+		background-image: url('food.png');
+		height: 700px;
+		background-size: cover;
+		background-position: top;
+	}
+	#header2 {
+		background-color: tan;
+		color: black;
+		font-size: 1.5em;
+		text-align: center;
+		padding: 10px 10px;
+	}
+		
+	#content {
+		background-image: url('back.jpg');
+		background-size: cover;
+		}
+		
+	#footer {
+		background-color: #777;
+		color: #FFF;
+		text-align: center;
+		font-size:1em;
+		line-height:50px;
+		height:50px;
+	}
+	
+	#footer p {margin:0px;}
+
+	#container{
+		background-color: blanchedalmond;
+		width: 950px;
+		line-height:1.5;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 15px;
+	}
+		
+	.usclogo {
+		width: 150px;
+		height: auto;
+		float: right;
+		padding-left:15px;
+		padding-top:75px;
+	}
+		
+
+	.clearfloat {
+		clear: both;
+	}
+
+
+	.form-row{
+		margin: 15px 0px;
+	}
+
+	.mainlabel{
+		width: 250px;
+		float: left;
+	}
+	
+	#questionfield{
+		width: 55%;
+	}
+
+#submit-btn{
+	background-color: maroon;
+	color: white;
+	font-size: 21px;
+	padding: 10px 25px;
+}
+
+#reset-btn{
+	background-color: gold;
+	color: black;
+	font-size: 21px;
+	padding: 10px 25px;
+}
+	/* Add Form CSS below */
+	/* form-row class, set top/bottom margins  */
+		
+	/* main-label class, set width and float left */
+	
+	/* add CSS for message, setting width 50% */
+	/* style button, add padding for top/bottom */
+	/* submit-btn id, add background color #900 and make text white */
+			
+	</style>
+
+</head>
+<body>
+
+<div id="header">
+</div><!-- #header -->
+
+<div id="header2">
+<h1>Indian Food Order Form</h1>
+</div>
+
+<div id="content">
+
+<div id="container">
+<img class="usclogo" src="naan.jpg" alt="Try some naan at noon">
+<h2>Namaste!</h2>
+<p>For questions regarding food quality and menu, email <a href="mailto:flavorsindia@usc.edu">flavorsindia@usc.edu</a>.</p>
+
+<!-- Add Form code below here -->
+<!-- Send form to confirmation.html -->
+<!-- Each input is wrapped around a form-row class div -->
+<!-- Each label contains a main-label class -->
+<!-- Name REQUIRED -->
+<!-- Email REQUIRED -->
+<!-- Are you a student? Yes or No -->
+<!-- Subscribe options: newsletter,events, alerts -->
+<!-- Dropdown, type of questions (general, admission, other ) -->
+<!-- Message field -->
+<!-- Submit and Reset button -->
+<form action="confirmation.html">
+
+<div class="form-row">
+<label for="namefield" class="mainlabel">Name:</label>
+<input id="namefield" type="text" placeholder="First Lastname" required>
+</div>
+
+<div class="form-row">
+<label for="emailfield" class="mainlabel">Email:</label>
+<input id="emailfield" type="email" required>
+</div>
+
+<div class="form-row">
+<label class="mainlabel">Spice Level</label>
+<input type="radio" value="extrachillis" name="spice_level" id="chili"><label for="chili">Extraaaa chilis</label>
+<input type="radio" value="spicy" name="spice_level" id="spi"><label for="spi">Spicy</label>
+<input type="radio" value="medium" name="spice_level" id="mid"><label for="mid">medium</label>
+<input type="radio" value="mild" name="spice_level" id="mild"><label for="mild">mild</label>
+<input type="radio" value="emild" name="spice_level" id="emild"><label for="emild">Extra mild...please</label>
+</div>
+
+<div class="form-row">
+<label class="mainlabel">Choose your appetizers:</label>
+<input type="checkbox" value="samosa" name="samosa" id="s"><label for="s">Samosas</label>
+<input type="checkbox" value="onion_pakoda" name="onion_pakoda" id="op"><label for="op">Onion Pakoda</label>
+<input type="checkbox" value="chaat" name="chaat" id="c"><label for="c">Chaat</label>
+<input type="checkbox" value="pani_puri" name="panipuri" id="pp"><label for="pp">Pani Puri</label>
+<input type="checkbox" value="chicken_skewers" name="ccskewers" id="ccs"><label for="ccs">Curry Chicken Skewers</label>
+</div>
+
+<div class="form-row">
+<label class="mainlabel">Choose your chicken curry:</label>
+<input type="checkbox" value="tikka_masala" name="tikkamasala" id="ctm"><label for="ctm">Chicken Tikka Masala</label>
+<input type="checkbox" value="vindaloo" name="vindaloo" id="cv"><label for="cv">Chicken Vindaloo</label>
+<input type="checkbox" value="korma" name="korma" id="ck"><label for="ck">Chicken Korma</label>
+<input type="checkbox" value="curry" name="curry" id="cc"><label for="cc">Chicken Curry</label>
+<input type="checkbox" value="butter" name="butter" id="bc"><label for="bc">Butter Chicken</label>
+</div>
+
+<div class="form-row">
+<label class="mainlabel">Choose your vegetarian curry:</label>
+<input type="checkbox" value="paneer_masala" name="pmasala" id="pm"><label for="pm">Paneer Masala</label>
+<input type="checkbox" value="aloo_matar" name="aloomatar" id="am"><label for="am">Aloo Matar</label>
+<input type="checkbox" value="makhani" name="daal" id="dm"><label for="dm">Daal Makhani</label>
+<input type="checkbox" value="malai_kofta" name="kofta" id="mk"><label for="mk">Malai Kofta</label>
+<input type="checkbox" value="veg_korma" name="vkorma" id="vk"><label for="vk">Vegetable Korma</label>
+</div>
+
+<div class="form-row">
+<label for="breads" class="mainlabel">Breads:</label>
+<select id="breads">
+	<option value="Plain Naan">Plain Naan</option>
+	<option value="Butter Naan">Butter Naan</option>
+	<option value="Garlic Naan">Garlic Naan</option>
+	<option value="Onion Kulcha">Onion Kulcha</option>
+	<option value="Roti">Roti</option>
+</select>
+</div>
+
+<div class="form-row">
+<label for="rice" class="mainlabel">Biryani & Rice:</label>
+<select id="rice">
+	<option value="Plain Naan">Chicken Biryani</option>
+	<option value="Butter Naan">Vegetable Biryani</option>
+	<option value="Garlic Naan">Fried Rice</option>
+	<option value="Onion Kulcha">Basmati Rice</option>
+</select>
+</div>
+
+<div class="form-row">
+<label for="requests" class="mainlabel">Special Requests:</label>
+<textarea id="requests"></textarea>
+</div>
+
+<div class="form-row">
+<button id="submit-btn" type="submit">Mouthwatering</button>
+<button id="reset-btn" type="reset">Nevermind</button>
+</div>
+
+</form>
+</div>
+</div> <!-- #content -->
+
+<div id="footer">
+<p>Flavors of India &copy; 2023</p>
+</div><!-- Footer -->
+
+</body>
+</html>

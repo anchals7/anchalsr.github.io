@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 04 | Anchal Srivastava</title>
+<style>
+	body{
+		background-color: #fdc3c6;
+	}
+	h1{
+  		-webkit-text-stroke: 1px black;
+	}
+	#header {
+		background-image: url('april.jpg');
+		height: 500px;
+		background-size: cover;
+		background-position: top;
+		color: #f7ef8a;
+		font-size: 2em;
+		text-align: center;
+		line-height: 500px;
+		text-shadow: 5px 5px 10px beige;
+	}
+
+	#content {
+		width: 950px;
+		line-height:1.5;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 15px;
+	}
+	.clearfloat {
+		clear: both;
+	}
+	
+	/* Add Table CSS below */
+	/* table collapse border, center text */
+	table{
+		border-collapse: collapse;
+		width: 950px;
+	}
+	/* th add border, #ccc, padding 10px top/bottom only and background color #ececec */
+	th{
+		border: 1px solid #ccc;
+		padding: 3px 0px;
+		background-color: lavender;
+		width: 134px;
+		font-family: 'Trebuchet MS', sans-serif;
+		font-size: 20px;
+	}
+
+	/*  #content width = 950px;
+		5 borders * 1px = 5px
+		950 - 5 = 945px
+		945 / 4 = 236.25px for each column
+		*/	
+	
+	/* td add border, #ccc, padding 10px top/bottom only and background color #ffffe0 */
+	td{
+		border: 1px solid #ccc;
+		padding: 1px 1px;
+		background-color: white;
+		vertical-align: top;
+		text-align: right;
+		height: 100px;
+	}
+
+	.other{
+		background-color: #dde6ed;
+	}
+
+	#bday{
+		background-image: url('cake.jpg');
+		background-position: center;
+		background-size: 131%;
+		font-weight: bold;
+	}
+	#sibling{
+		background-image: url('siblling.jpg');
+		background-position-y: 170px;
+		background-position-x: 161px;
+		background-size: 149%;
+		font-weight: bold;
+	}
+	#earth{
+		background-image: url('earth.jpg');
+		background-position: center;
+		background-size: cover;
+		font-weight: bold;
+	}
+	span.inbox{
+		font-size: 13px;
+		padding: 0px 0px;
+		background-color: lavenderblush;
+		display: block;
+		vertical-align: bottom;
+		text-align: center;
+		margin-top: 50px;
+		width: auto;
+	}
+	p{
+		margin: 0px 0px;
+		border: 0px;
+		padding: 0px 0px;
+		background-color: lavenderblush;
+	}
+
+</style>
+</head>
+
+<body>
+
+<div id="content">
+<div id="header">
+<h1>April 2024</h1>
+</div><!-- #header -->
+<!-- Add Table -->
+<table>
+<!-- Tour Name, Duration, Days Offered, Audience -->
+<tr>
+<th>Sunday</th>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th>Saturday</th>
+</tr>
+<tr>
+<td class="other">31</td>
+<td id="bday">1
+	<span class="inbox">
+Anchal's Birthday
+</span>
+</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td id="sibling">10
+	<span class="inbox">
+National Sibling's Day
+</span></td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+</tr>
+<tr>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+<tr>
+<td>21</td>
+<td id="earth">22
+<span class="inbox">
+Earth Day
+</span>
+</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+</tr>
+<tr>
+<td>28</td>
+<td>29</td>
+<td>30</td>
+<td class="other">1</td>
+<td class="other">2</td>
+<td class="other">3</td>
+<td class="other">4</td>
+</tr>
+</table>
+</div>
+
+
+</body>
+
+</html>

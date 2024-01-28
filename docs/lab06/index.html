@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<link href="styles.css" rel="stylesheet">
+
+<style>
+
+
+
+	#header {
+		background-image: url('back.png');
+		height: 200px;
+		background-position: center;
+		line-height: 200px;
+	}
+	
+	/* Gallery CSS */
+	
+	#gallery {margin:0 5%;}
+
+	.thumbnail {
+		background-color: lightgreen;
+		width: 250px; 
+		height: 250px;
+		margin: 15px;
+		border: 1px solid #000;
+		overflow: hidden;	
+	}
+	
+	.thumbnail-container{
+		float:left;
+		text-align: center;
+	}
+
+	.thumbnail-container p{
+		visibility: hidden;
+	}
+
+	.thumbnail-container:hover p {
+		visibility: visible;
+	}
+
+	/* landscape class adjust image to auto width, height 100% */
+	.landscape {
+		width:auto;
+		height:100%;
+	}
+
+	/* portrait class adjust image to width 100%, height auto */
+	.portrait {
+		width:100%;
+		height:auto;
+	}
+	
+</style>
+
+</head>
+<body>
+
+<div id="header">
+<h1></h1>
+</div><!-- #header -->
+
+
+<div id="content">
+
+
+<!-- Gallery Content -->
+
+<h2>My favorites of many things!</h2>
+
+<div id="gallery">
+
+<div class="thumbnail-container">
+	<div class="thumbnail">
+					<img class="portrait" src="anime.jpg" alt="USC Village">
+	</div> <!-- .thumbnail -->
+	<p>Favorite anime/manga - Death Note</p>
+</div>
+<div class="thumbnail-container">
+	<div class="thumbnail">
+					<img class="portrait" src="books.jpg" alt="Mudd Hall">
+	</div> <!-- .thumbnail -->
+	<p>One of my favorite hobbies - Reading</p>
+</div>
+<div class="thumbnail-container">
+	<div class="thumbnail">
+					<img class="landscape" src="code.jpg" alt="Dining Hall">
+	</div> <!-- .thumbnail -->
+	<p>A significant part of my life - Coding</p>
+</div>
+<div class="thumbnail-container">
+	<div class="thumbnail">
+					<img class="portrait" src="food.jpg" alt="Entrance">
+	</div> <!-- .thumbnail -->
+	<p>The love of my life - food and snacking!</p>
+</div>
+<div class="thumbnail-container">
+	<div class="thumbnail">
+					<img class="portrait" src="system.jpg" alt="Entrance">
+	</div> <!-- .thumbnail -->
+	<p>My love for building - Microcontrollers</p>
+</div>
+<div class="thumbnail-container">
+	<div class="thumbnail">
+					<img class="portrait" src="boba.jpg" alt="Entrance">
+	</div> <!-- .thumbnail -->
+	<p>Favorite Drink - Thai Milk Tea Boba</p>
+</div>
+
+	<div class="clearfloat"></div>
+</div> <!-- #gallery -->
+
+
+</div> <!-- #content -->
+
+<div id="footer">
+<p>Anchal &copy; 2023</p>
+</div><!-- Footer -->
+
+</body>
+</html>
