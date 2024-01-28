@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animations</title>
+		<link href="styles.css" rel="stylesheet">
+		<style>
+
+  .page_content{
+  }
+
+  body{
+  	background-color: black;
+  	color: white;
+  }
+
+  .glow{
+  	font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+#part1 {
+	padding: 10px;
+}
+
+#part2{
+	padding: 20px;
+}
+
+#part3{
+	padding: 20px;
+}
+
+#part2 iframe{
+	margin-left: 25%;
+}
+#part3 iframe{
+	margin-left: 25%;
+}
+
+#part1 p{
+	padding: 30px;
+	text-align: center;
+}
+
+#part1 iframe{
+	margin-left: 25%
+}
+
+
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: flex 0.8s ease;
+}
+
+.item:hover{
+	flex: 7;
+}
+
+.item-1 { 
+  background-image: url('img/bob.jpg');
+}
+
+.item-2 { 
+  background-image: url('img/ben.jpg');
+}
+
+.item-3 { 
+  background-image: url('img/win.jpg');
+}
+
+.item-4 { 
+  background-image: url('img/tom.jpg');
+}
+
+.item-5 { 
+  background-image: url('img/bheem.jpg');
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- Add NAV DIV below -->
+<div class="page_content">
+<div id="nav-wrapper">
+	<h1>@Animate</h1>
+<div id="nav">
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="webtoon.html">Webtoon</a></li>
+				<li>
+					<a class ="active" href="animation.html">Animations</a>
+					<ul>
+						<li><a href="animation.html#gotoghibili">Studio Ghibili</a></li>
+						<li><a href="animation.html#gotoanime">Anime</a></li>
+						<li><a href="animation.html#gotocartoons">Cartoons</a></li>
+					</ul>
+				</li>
+				<li><a href="join.html">Join Us</a></li>
+			</ul>
+
+		<div class="clearfloat"></div>
+</div>
+</div>
+
+<div id="part1">
+<h2 class="glow">What is animation?</h2>
+<p>Animation is the method that encompasses myriad filmmaking techniques, by which still images are manipulated to create moving images. In traditional animation, images are drawn or painted by hand on transparent celluloid sheets to be photographed and exhibited on film.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dGGU4rAkShE?si=EsCznAs_t5afDe_Y" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div id="part2">
+<h1 id="gotoghibili" class="glow">Studio Ghibili</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t5khm-VjEu4?si=OH34lte1vMVIzzV_" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fDUFP7EeXLE?si=Db1yiucg9i9bg-Ws" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/92a7Hj0ijLs?si=Z4QvVM9LZlAJGjen" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+
+
+<div id="part3">
+<h1 id="gotoanime" class="glow">Anime</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xU47nhruN-Q?si=1vvU948zrI-YCoK0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XYNGkSvFT8c?si=9djRF9x7-ykrA1DE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IfKNOUUtyCA?si=W8TPOrand1l6o8pq" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+
+<div class="cartoonGallery">
+<h1 id="gotocartoons" class="glow">Cartoons</h1>
+
+  <div class="gallery-wrap">
+    <div class="item item-1"></div>
+    <div class="item item-2"></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+    <div class="item item-5"></div>
+  </div>
+ </div>
+
+
+
+
+
+<div class="clearfloat"></div>
+</div>
+
+	<div id="footer">
+		<p>&#169; 2023 Animate</p>
+	</div>
+
+	</body>
+
+</html>

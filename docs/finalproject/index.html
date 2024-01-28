@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Final Project</title>
+		<link href="styles.css" rel="stylesheet">
+		<style>
+
+		#section-one{
+		margin: 0 auto;
+		background-color: white;
+		}
+
+		#section-three{
+			margin: 0 auto;
+			background-color: #8B786D;
+		}
+
+	.dash{
+		float: right;
+		height: auto;
+		width: 45%;
+		padding: 30px;
+		transition: transform 2s;
+	}
+
+	.dash2{
+		float: right;
+		height: auto;
+		width: 45%;
+		padding: 20px;
+		border: solid 5px transparent;
+  	background: #3E4377;
+	}
+
+	.dash:hover{
+		transform: scale(1.1) translate(-1.9rem, 2ex);
+	}
+
+	#section-three:hover .dash2{
+  	display: block;
+  	animation-duration: 0.6s;
+  	animation-name: borderC;
+  	animation-fill-mode: forwards;  
+	}
+
+
+	#section-one h1{
+		font-size: 45px;
+		line-height: 40px;
+	}
+
+	#section-three h2{
+		font-size: 35px;
+		line-height: 40px;
+		color: #EBF5EE;
+	}
+
+	#one-content{
+		padding: 80px;
+	}
+
+	#three-content{
+		padding: 45px;
+	}
+
+
+	#one-content p{
+		font-size: 23px;
+		font-weight: bold;
+	}
+
+	#three-content p{
+		font-size: 20px;
+		color: #EBF5EE;
+	}
+
+
+	.pass {
+		width: 150px;
+		padding: 10px;
+		margin-right: 40px;
+		margin-left: 10px;
+		background-color: #78A1BB;
+		color: #EBF5EE;
+	}
+
+	.pass:hover {
+		background-color: #EBF5EE;
+		color: #78A1BB;
+	}
+
+
+	.pass2 {
+		width: 150px;
+		padding: 10px;
+		margin-right: 40px;
+		margin-left: 10px;
+		background-color: #EBF5EE;
+		border-color: #78A1BB;
+		color: #78A1BB;
+	}
+
+	.pass2:hover{
+		background-color: #78A1BB;
+		color: #EBF5EE;
+	}
+
+
+	button{
+		padding: 10px;
+		border-radius: 20px;
+		border: 2px solid #78A1BB;
+	}
+
+	.columns{
+		width: 350px;
+		vertical-align: top;
+		padding: 20px;
+		text-align: center;
+		display: inline-block;
+		transition: transform 2s;
+	}
+
+	.columns img{
+		width: 200px;
+		height: 200px;
+		object-fit: contain;
+	}
+
+	#section-two{
+		margin: 0px auto;
+		padding: 0 10px;
+		background-color: #EBF5EE;
+	}
+
+	.columns:hover img{
+		transform: scale(1.2);
+	}
+	.columns:hover{
+		background-color: #BFA89E;
+	}
+	
+	@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 500%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 45%;
+  }
+}
+
+	@keyframes borderC {
+  from {
+    border: solid 5px transparent;
+  }
+
+  to {
+    border: solid 10px #FC5185;
+  }
+}
+
+.slideshow{
+	margin-left: 9%;
+	margin-top: 10px;
+	display: inline-block;
+	position: absolute;
+	float: left;
+}
+
+ .slideshow img{
+  	width: 1000px;
+  	height: 700px;
+  	object-fit: contain;
+  }
+
+  .left_btn{
+  	position: relative;
+  	top: -350px;
+
+  }
+
+    .right_btn{
+  	position: relative;
+  	top: -350px;
+  	left: 935px;
+  }
+
+  .page_content{
+  	padding-bottom: 45em;
+  }
+
+
+
+		</style>
+	</head>
+
+	<body>
+<!-- Add NAV DIV below -->
+<div class="page_content">
+<div id="nav-wrapper">
+	<h1>@Animate</h1>
+<div id="nav">
+				<ul>
+				<li><a class ="active" href="index.html">Home</a></li>
+				<li><a href="webtoon.html">Webtoon</a></li>
+				<li>
+					<a href="animation.html">Animations</a>
+					<ul>
+						<li><a href="animation.html#gotoghibili">Studio Ghibili</a></li>
+						<li><a href="animation.html#gotoanime">Anime</a></li>
+						<li><a href="animation.html#gotocartoons">Cartoons</a></li>
+					</ul>
+				</li>
+				<li><a href="join.html">Join Us</a></li>
+			</ul>
+
+		<div class="clearfloat"></div>
+</div>
+</div>
+
+<div id="section-one">
+	<img class="dash" src="img/discover.jpg" alt="Dashpass Desktop">
+	<div id="one-content">
+	<h1>Discover Your World of Fantasy</h1>
+	<p>Looking for a new adventure? Want to visit a new fairytale? Learn all about webtoons and different animations.</p>
+	<form>
+	<button type="submit" formaction="index.html#gototwo" class="pass">GET STARTED</button>
+	<button type="submit" formaction="join.html" class="pass2">SUBSCRIBE US</button>
+</form>
+</div>
+<div class="clearfloat"></div>
+</div>
+
+
+	<div id="section-two">
+		<div id="two-content">
+			<div id="left" class="columns">
+				<img id="gototwo" src="img/c_anime.jpg" alt="Scoot Scoot">
+				<h2>Explore Animes!</h2>
+				<h3>The best anime to watch for those just starting out include beloved classics like Naruto, Demon Slayer, Bleach, One Piece, and more!</h3>
+			</div>
+			<div id="center" class="columns">
+				<img src="img/c_cartoon.jpg" alt="Store Front">
+				<h2>Enter a Cartoon World</h2>
+				<h3>Cartoons are prime entertainment. Go on adventures with the many classics like Ben 10, Tom and Jerry, Shin-chan, Batman, and many others!</h3>
+			</div>
+			<div id="right" class="columns">
+				<img src="img/c_ghibili.jpg" alt="iPhone">
+				<h2>Welcome to Ghibili House</h2>
+				<h3>Studio Ghibli is the home of some of the most revered and beloved animated works. Be <i>Spirited Away</i> with the <i>Whisper of the Heart</i>!</h3>
+			</div>
+		</div>
+		<div class="clearfloat"></div>
+	</div>
+
+	<div id="section-three">
+	<img class="dash2" src="img/webtoon2.png" alt="Webtoon">
+	<div id="three-content">
+	<h2>Step into the Webtoon World</h2>
+	<p>Ever seen those shows or stories where the main character's favorite book character steps into the real world? Why are you waiting for your main character to come?</p>
+	<p>Start reading a Webtoon now to get meet some of your favorite characters and get closer!</p>
+</div>
+<div class="clearfloat"></div>
+</div>
+
+
+<div class="slideshow">
+  <img class="mySlides" src="img/ss1.png" alt="Webtoon1">
+  <img class="mySlides" src="img/ss2.png" alt="Webtoon2">
+  <img class="mySlides" src="img/ss3.jpg" alt="Anime1">
+  <img class="mySlides" src="img/ss4.jpg" alt="Anime2">
+  <img class="mySlides" src="img/ss5.jpg" alt="Ghbili Movies">
+
+
+  <button class="left_btn" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="right_btn" onclick="plusDivs(1)">&#10095;</button>
+  <div class="clearfloat"></div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<div class="clearfloat"></div>
+</div>
+
+	<div id="footer">
+		<p>&#169; 2023 Animate</p>
+	</div>
+
+	</body>
+
+</html>

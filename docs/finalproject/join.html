@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Subscription Page</title>
+		<link href="styles.css" rel="stylesheet">
+		<style>
+
+  .page_content{
+  }
+
+  .form-row{
+		margin: 15px 0px;
+	}
+
+	.mainlabel{
+		width: 250px;
+		float: left;
+	}
+	
+	#questionfield{
+		width: 55%;
+	}
+
+#submit-btn{
+	background-color: #8B786D;
+	color: white;
+	font-size: 21px;
+	padding: 10px 25px;
+}
+
+#reset-btn{
+	background-color: #EBF5EE;
+	color: black;
+	font-size: 21px;
+	padding: 10px 25px;
+}
+
+.f{
+	margin: 20px;
+}
+
+#header{
+	background-image: url('img/join.png');
+	height: 700px;
+	background-size: cover;
+	background-position: center;
+}
+
+
+	.overlay{
+		background-color: rgba(0,0,0,.5);
+			position: absolute;
+			top: 50px;
+			width: 1215px;
+			height: 456.5px;
+			color: #fff;
+			text-align: center;
+			padding-top:20%;
+
+		}
+
+		</style>
+	</head>
+
+	<body>
+<!-- Add NAV DIV below -->
+<div class="page_content">
+<div id="nav-wrapper">
+	<h1>@Animate</h1>
+<div id="nav">
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="webtoon.html">Webtoon</a></li>
+				<li>
+					<a href="animation.html">Animations</a>
+					<ul>
+						<li><a href="animation.html#gotoghibili">Studio Ghibili</a></li>
+						<li><a href="animation.html#gotoanime">Anime</a></li>
+						<li><a href="animation.html#gotocartoons">Cartoons</a></li>
+					</ul>
+				</li>
+				<li><a class ="active" href="join.html">Join Us</a></li>
+			</ul>
+
+		<div class="clearfloat"></div>
+</div>
+</div>
+
+<div id="header">
+	<div class="overlay">
+		<h2>Subscribe to our Newsletter!</h2>
+	</div>
+</div>
+
+<div class="f">
+
+<form action="confirmation.html">
+
+<div class="form-row">
+<label for="namefield" class="mainlabel">Name:</label>
+<input id="namefield" type="text" placeholder="First Lastname" required>
+</div>
+
+<div class="form-row">
+<label for="emailfield" class="mainlabel">Email:</label>
+<input id="emailfield" type="email" required>
+</div>
+
+<div class="form-row">
+<label class="mainlabel">Newsletter Preference</label>
+<input type="radio" value="weekly" name="weekly" id="weekly"><label for="weekly">Weekly</label>
+<input type="radio" value="biweekly" name="biweekly" id="bi"><label for="bi">Biweekly</label>
+<input type="radio" value="monthly" name="monthly" id="mon"><label for="mon">Monthly</label>
+</div>
+
+<div class="form-row">
+<label class="mainlabel">Media Interests:</label>
+<input type="checkbox" value="webtoon" name="webtoon" id="w"><label for="w">Webtoons</label>
+<input type="checkbox" value="anime" name="anime" id="a"><label for="a">Anime</label>
+<input type="checkbox" value="studio_ghibili" name="studio_ghibili" id="s"><label for="s">Studio Ghibili</label>
+<input type="checkbox" value="cartoon" name="cartoon" id="c"><label for="c">Cartoons</label>
+</div>
+
+
+<div class="form-row">
+<label for="requests" class="mainlabel">Special Requests:</label>
+<textarea id="requests"></textarea>
+</div>
+
+<div class="form-row">
+<button id="submit-btn" type="submit">Subscribe</button>
+<button id="reset-btn" type="reset">Reset</button>
+</div>
+
+</form>
+
+</div>
+<div class="clearfloat"></div>
+</div>
+
+	<div id="footer">
+		<p>&#169; 2023 Animate</p>
+	</div>
+
+	</body>
+
+</html>

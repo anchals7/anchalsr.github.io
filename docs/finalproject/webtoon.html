@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Webtoons</title>
+		<link href="styles.css" rel="stylesheet">
+		<style>
+
+  .page_content{
+  }
+
+  body{
+  	background-color: white;
+  }
+
+.one{
+	width: 400px;
+	height: auto;
+}
+
+.sec{
+	padding-left: 20px;
+}
+
+.info{
+	padding: 20px;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+}
+
+#header{
+	background-image: url('img/join.png');
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+}
+
+.trend_one{
+	margin-left: 150px;
+	margin-right: 30px;
+	margin-top: 20px;
+	float: left;
+	padding-bottom: 20px;
+}
+
+.trend_one img{
+	transition: transform 3s;
+}
+.container img{
+	transition: transform 3s;
+}
+
+.trend_other{
+	float: left;
+	margin-top: 100px;
+}
+
+	.overlay{
+		background-color: rgba(0,0,0,.5);
+			position: absolute;
+			top: 50px;
+			width: 1215px;
+			height: 119px;
+			color: #fff;
+			text-align: center;
+			padding-top:15%;
+
+		}
+
+	.trend_one h2{
+		margin-bottom: 0px;
+		margin-top: 10px;
+		padding-bottom: 0px;
+	}
+
+	.trend_one p{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+	}
+
+	.trend_one:hover img{
+		transform: scale(1.05);
+	}
+	.trend_one:hover{
+		background-color: #EBF5EE;
+	}
+	.container:hover img{
+		transform: scale(1.1);
+	}
+	.container:hover{
+		background-color: #EBF5EE;
+	}
+
+	.trend_other h4{
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	.trend_other p{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+	}
+
+	.column{
+		float: left;
+		width: 190px;
+		height: 50px;
+		padding: 20px;
+		margin: 4.5px;
+		text-align: center;
+		border: solid 2px;
+		border-radius: 8px;
+		filter: drop-shadow(1px 2px 8px hsl(220deg 100% 50%));
+		cursor: pointer;
+	}
+
+	.column:hover{
+		box-shadow:
+      1px 2px 2px hsl(220deg 60% 50% / 0.2),
+      2px 4px 4px hsl(220deg 60% 50% / 0.2),
+      4px 8px 8px hsl(220deg 60% 50% / 0.2),
+      8px 16px 16px hsl(220deg 60% 50% / 0.2),
+      16px 32px 32px hsl(220deg 60% 50% / 0.2);
+	}
+
+.containerTab {
+  padding: 20px;
+  color: black;
+  display: none;
+  margin: 10px;
+  padding-left: 35%;
+  background-color: #EBF5EE;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  margin-right: 40%;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+.col_img{
+	width: 300px;
+	height: auto;
+	margin-bottom: 10px;
+	margin-top: 70px;
+
+}
+
+#header-three{
+	text-align: center;
+	height: 300px;
+	background-image: url('img/original.png');
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+#header-three h1{
+	background-color: #283044;
+}
+
+
+		</style>
+	</head>
+
+	<body>
+<!-- Add NAV DIV below -->
+<div class="page_content">
+<div id="nav-wrapper">
+	<h1>@Animate</h1>
+<div id="nav">
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class ="active" href="webtoon.html">Webtoon</a></li>
+				<li>
+					<a href="animation.html">Animations</a>
+					<ul>
+						<li><a href="animation.html#gotoghibili">Studio Ghibili</a></li>
+						<li><a href="animation.html#gotoanime">Anime</a></li>
+						<li><a href="animation.html#gotocartoons">Cartoons</a></li>
+					</ul>
+				</li>
+				<li><a href="join.html">Join Us</a></li>
+			</ul>
+
+		<div class="clearfloat"></div>
+</div>
+</div>
+
+<div id="header">
+	<div class="overlay">
+		<h2>Explore Webtoons</h2>
+	</div>
+</div>
+
+<div class="trend_one">
+	<h1>New and Trending</h1>
+	<img class="one" src="img/web_one.jpg" alt="Number one trending webtoon">
+	<h2>The Mafia Nanny</h2>
+	<p>Romance</p>
+	<p>sh00 / Violet Matter</p>
+</div>
+
+<div class="trend_other">
+<div class="container">
+	<div class="sec">
+		<img class="other" src="img/web_two.jpg" alt="Number one trending webtoon">
+	</div>
+	<div class="info">
+		<h3>2</h3>
+	</div>
+	<div class="info">
+		<h4>A Martial Master Wakes Up as a Concubine</h4>
+		<p>Fantasy</p>
+		<p>LICO / koyanghee</p>
+	</div>
+</div>
+<div class="container">
+	<div class="sec">
+		<img class="other" src="img/web_three.jpg" alt="Number one trending webtoon">
+	</div>
+	<div class="info">
+		<h3>3</h3>
+	</div>
+	<div class="info">
+		<h4>Bugtopia</h4>
+		<p>Slice of Life</p>
+		<p>Idolomantases</p>
+	</div>
+</div>
+<div class="container">
+	<div class="sec">
+		<img class="other" src="img/web_four.jpg" alt="Number one trending webtoon">
+	</div>
+	<div class="info">
+		<h3>4</h3>
+	</div>
+	<div class="info">
+		<h4>Ten Ways to Get Dumpled by a Tyrant</h4>
+		<p>Fantasy</p>
+		<p>danmyeong / mapzzil</p>
+	</div>
+</div>
+<div class="container">
+	<div class="sec">
+		<img class="other" src="img/web_five.jpg" alt="Number one trending webtoon">
+	</div>
+	<div class="info">
+		<h3>5</h3>
+	</div>
+	<div class="info">
+		<h4>Snowbound</h4>
+		<p>Romance</p>
+		<p>Kisai Entertainment / WmW</p>
+	</div>
+</div>
+<div class="clearfloat"></div>
+</div>
+<div class="clearfloat"></div>
+
+<div id="header-three">
+<h1>Top Originals</h1>
+</div>
+
+<div class="row">
+  <div class="column" onclick="openTab('b1');">Action</div>
+  <div class="column" onclick="openTab('b2');">Romance</div>
+  <div class="column" onclick="openTab('b3');">Fantasy</div>
+  <div class="column" onclick="openTab('b4');">Drama</div>
+  <div class="column" onclick="openTab('b5');">Comedy</div>
+  <div class="column" onclick="openTab('b6');">Thriller</div>
+  <div class="column" onclick="openTab('b7');">Slice of Life</div>
+  <div class="column" onclick="openTab('b8');">Supernatural</div>
+  <div class="column" onclick="openTab('b9');">Sci-fi</div>
+  <div class="column" onclick="openTab('b10');">Horror</div>
+</div>
+
+
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab">
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <img class="col_img" src="img/action.jpg" alt="Number one trending webtoon">
+  <h2>Omniscient Reader</h2>
+  <p>singNsong / UMI</p>
+</div>
+
+<div id="b2" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <img class="col_img" src="img/romance.jpg" alt="Number one trending webtoon">
+  <h2>Lore Olympus</h2>
+  <p>Rachel Symthe</p>
+</div>
+
+<div id="b3" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <img class="col_img" src="img/fantasy.jpg" alt="Number one trending webtoon">
+  <h2>The Remarried Empress</h2>
+  <p>Alphatart / Sumpul</p>
+</div>
+
+<div id="b4" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <img class="col_img" src="img/drama.jpg" alt="Number one trending webtoon">
+  <h2>I Love Yoo</h2>
+  <p>Quimchee</p>
+</div>
+
+<div id="b5" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <img class="col_img" src="img/comedy.jpg" alt="Number one trending webtoon">
+  <h2>Cursed Princess Club</h2>
+  <p>LamCat</p>
+</div>
+
+<div id="b6" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <img class="col_img" src="img/thriller.jpg" alt="Number one trending webtoon">
+  <h2>School Bus Graveyard</h2>
+  <p>Red</p>
+</div>
+
+<div id="b7" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <img class="col_img" src="img/slice.jpg" alt="Number one trending webtoon">
+  <h2>Batman: Wayne Family Adventures</h2>
+  <p>StarBite / CRC Payne</p>
+</div>
+
+<div id="b8" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <img class="col_img" src="img/supernatural.jpg" alt="Number one trending webtoon">
+  <h2>Nevermore</h2>
+  <p>Kate Flynn / Kit Trace</p>
+</div>
+
+<div id="b9" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <img class="col_img" src="img/scifi.jpg" alt="Number one trending webtoon">
+  <h2>City of Blank</h2>
+  <p>66</p>
+</div>
+
+<div id="b10" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <img class="col_img" src="img/horro.jpg" alt="Number one trending webtoon">
+  <h2>Everything is Fine</h2>
+  <p>Mike Birchall</p>
+</div>
+
+<script type="text/javascript">
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+
+<div class="clearfloat"></div>
+</div>
+
+	<div id="footer">
+		<p>&#169; 2023 Animate</p>
+	</div>
+
+	</body>
+
+</html>
